@@ -5,7 +5,6 @@ product/app/Chrome/Chrome.apk.gz
 -product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk;OVERRIDES=DeskClock;PRESIGNED
 -product/app/PrebuiltGmail/PrebuiltGmail.apk;OVERRIDES=Email;PRESIGNED
 -product/app/GoogleContacts/GoogleContacts.apk;OVERRIDES=Contacts;PRESIGNED
--product/app/GoogleContactsSyncAdapter/GoogleContactsSyncAdapter.apk;PRESIGNED
 -product/app/GoogleTTS/GoogleTTS.apk;PRESIGNED
 -product/app/LocationHistoryPrebuilt/LocationHistoryPrebuilt.apk;PRESIGNED
 -product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk;OVERRIDES=LatinIME;PRESIGNED
