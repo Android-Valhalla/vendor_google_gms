@@ -72,7 +72,6 @@ PRODUCT_PACKAGES += \
     CalendarGooglePrebuilt \
     Chrome-Stub \
     GoogleContacts \
-    GoogleContactsSyncAdapter \
     GoogleTTS \
     LatinIMEGooglePrebuilt \
     LocationHistoryPrebuilt \
