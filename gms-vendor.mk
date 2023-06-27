@@ -81,7 +81,6 @@ PRODUCT_PACKAGES += \
     TrichromeLibrary-Stub \
     WebViewGoogle-Stub \
     YouTube \
-    AndroidAutoStubPrebuilt \
     CarrierServices \
     ConfigUpdater \
     GoogleDialer \

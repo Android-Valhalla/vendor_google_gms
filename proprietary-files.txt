@@ -20,7 +20,6 @@ product/etc/security/fsverity/gms_fsverity_cert.der
 product/etc/security/fsverity/play_store_fsi_cert.der
 product/etc/sysconfig/google-hiddenapi-package-whitelist.xml
 -product/framework/com.google.android.dialer.support.jar
--product/priv-app/AndroidAutoStubPrebuilt/AndroidAutoStubPrebuilt.apk;PRESIGNED
 -product/priv-app/CarrierServices/CarrierServices.apk;PRESIGNED
 -product/priv-app/ConfigUpdater/ConfigUpdater.apk;PRESIGNED
 -product/priv-app/PrebuiltBugle/PrebuiltBugle.apk;OVERRIDES=Mms,messaging;PRESIGNED
