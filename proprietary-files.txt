@@ -13,7 +13,6 @@ product/app/TrichromeLibrary/TrichromeLibrary.apk.gz
 -product/app/TrichromeLibrary-Stub/TrichromeLibrary-Stub.apk;PRESIGNED
 product/app/WebViewGoogle/WebViewGoogle.apk.gz
 -product/app/WebViewGoogle-Stub/WebViewGoogle-Stub.apk;OVERRIDES=webview;PRESIGNED
--product/app/YouTube/YouTube.apk;PRESIGNED
 product/etc/permissions/com.google.android.dialer.support.xml
 product/etc/preferred-apps/google.xml
 product/etc/security/fsverity/gms_fsverity_cert.der

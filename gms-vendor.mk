@@ -80,7 +80,6 @@ PRODUCT_PACKAGES += \
     PrebuiltGmail \
     TrichromeLibrary-Stub \
     WebViewGoogle-Stub \
-    YouTube \
     CarrierServices \
     ConfigUpdater \
     GoogleDialer \
