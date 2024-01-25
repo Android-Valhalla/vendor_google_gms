@@ -89,3 +89,6 @@ product/usr/srec/en-US/voice_match/MARBLE_speakerid.tflite
 -system/app/GooglePrintRecommendationService/GooglePrintRecommendationService.apk;OVERRIDES=PrintRecommendationService;PRESIGNED
 system/etc/permissions/privapp-permissions-google.xml
 -system/priv-app/TagGoogle/TagGoogle.apk;PRESIGNED;OVERRIDES=Tag
+
+# samsung
+product/etc/sysconfig/google_searcle.xml
