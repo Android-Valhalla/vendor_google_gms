@@ -71,7 +71,6 @@ PRODUCT_PACKAGES += \
     GoogleExtShared \
     GooglePrintRecommendationService \
     TagGoogle \
-    CalculatorGooglePrebuilt \
     CalendarGooglePrebuilt \
     Chrome-Stub \
     GoogleContacts \

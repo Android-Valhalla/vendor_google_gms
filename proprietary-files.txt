@@ -1,4 +1,3 @@
--product/app/CalculatorGooglePrebuilt/CalculatorGooglePrebuilt.apk;OVERRIDES=Calculator,ExactCalculator;PRESIGNED
 -product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk;OVERRIDES=Calendar;PRESIGNED
 product/app/Chrome/Chrome.apk.gz
 -product/app/Chrome-Stub/Chrome-Stub.apk;OVERRIDES=Browser,Browser2,Jelly;PRESIGNED
