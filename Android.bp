@@ -13,6 +13,7 @@ android_app_import {
 	apk: "proprietary/system/app/GoogleExtShared/GoogleExtShared.apk",
 	overrides: ["ExtShared"],
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -24,6 +25,7 @@ android_app_import {
 	apk: "proprietary/system/app/GooglePrintRecommendationService/GooglePrintRecommendationService.apk",
 	overrides: ["PrintRecommendationService"],
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -34,6 +36,7 @@ android_app_import {
 	owner: "google",
 	apk: "proprietary/system/priv-app/TagGoogle/TagGoogle.apk",
 	presigned: true,
+	preprocessed: true,
 	overrides: ["Tag"],
 	dex_preopt: {
 		enabled: false,
@@ -47,6 +50,7 @@ android_app_import {
 	apk: "proprietary/product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk",
 	overrides: ["Calendar"],
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -59,6 +63,7 @@ android_app_import {
 	apk: "proprietary/product/app/Chrome-Stub/Chrome-Stub.apk",
 	overrides: ["Browser", "Browser2", "Jelly"],
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -71,6 +76,7 @@ android_app_import {
 	apk: "proprietary/product/app/GoogleContacts/GoogleContacts.apk",
 	overrides: ["Contacts"],
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -82,6 +88,7 @@ android_app_import {
 	owner: "google",
 	apk: "proprietary/product/app/GoogleTTS/GoogleTTS.apk",
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -94,6 +101,7 @@ android_app_import {
 	apk: "proprietary/product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk",
 	overrides: ["LatinIME"],
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -105,6 +113,7 @@ android_app_import {
 	owner: "google",
 	apk: "proprietary/product/app/LocationHistoryPrebuilt/LocationHistoryPrebuilt.apk",
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -117,6 +126,7 @@ android_app_import {
 	apk: "proprietary/product/app/Photos/Photos.apk",
 	overrides: ["Gallery2", "SnapdragonGallery"],
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -129,6 +139,7 @@ android_app_import {
 	apk: "proprietary/product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk",
 	overrides: ["DeskClock"],
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -141,6 +152,7 @@ android_app_import {
 	apk: "proprietary/product/app/PrebuiltGmail/PrebuiltGmail.apk",
 	overrides: ["Email"],
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -152,6 +164,7 @@ android_app_import {
 	owner: "google",
 	apk: "proprietary/product/app/TrichromeLibrary-Stub/TrichromeLibrary-Stub.apk",
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -164,6 +177,7 @@ android_app_import {
 	apk: "proprietary/product/app/WebViewGoogle-Stub/WebViewGoogle-Stub.apk",
 	overrides: ["webview"],
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -175,6 +189,7 @@ android_app_import {
 	owner: "google",
 	apk: "proprietary/product/priv-app/CarrierServices/CarrierServices.apk",
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -187,6 +202,7 @@ android_app_import {
 	owner: "google",
 	apk: "proprietary/product/priv-app/ConfigUpdater/ConfigUpdater.apk",
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -200,6 +216,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/GoogleDialer/GoogleDialer.apk",
 	overrides: ["Dialer"],
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -213,6 +230,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk",
 	overrides: ["OneTimeInitializer"],
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -225,6 +243,7 @@ android_app_import {
 	owner: "google",
 	apk: "proprietary/product/priv-app/GoogleRestorePrebuilt/GoogleRestorePrebuilt.apk",
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -237,6 +256,7 @@ android_app_import {
 	owner: "google",
 	apk: "proprietary/product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk",
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -249,6 +269,7 @@ android_app_import {
 	owner: "google",
 	apk: "proprietary/product/priv-app/Phonesky/Phonesky.apk",
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -262,6 +283,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/PrebuiltBugle/PrebuiltBugle.apk",
 	overrides: ["Mms", "messaging"],
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -274,6 +296,7 @@ android_app_import {
 	owner: "google",
 	apk: "proprietary/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk",
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -286,6 +309,7 @@ android_app_import {
 	owner: "google",
 	apk: "proprietary/product/priv-app/PrebuiltGmsCore/m/independent/AndroidPlatformServices.apk",
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -299,6 +323,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/SetupWizardPrebuilt/SetupWizardPrebuilt.apk",
 	overrides: ["Provision"],
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -312,6 +337,7 @@ android_app_import {
 	apk: "proprietary/product/priv-app/Velvet/Velvet.apk",
 	overrides: ["QuickSearchBox"],
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -324,6 +350,7 @@ android_app_import {
 	owner: "google",
 	apk: "proprietary/product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk",
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -336,6 +363,7 @@ android_app_import {
 	owner: "google",
 	apk: "proprietary/system_ext/priv-app/GoogleFeedback/GoogleFeedback.apk",
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -348,6 +376,7 @@ android_app_import {
 	owner: "google",
 	apk: "proprietary/system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk",
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -360,6 +389,7 @@ android_app_import {
 	owner: "google",
 	apk: "proprietary/system_ext/priv-app/PixelSetupWizard/PixelSetupWizard.apk",
 	presigned: true,
+	preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -373,4 +403,3 @@ dex_import {
 	jars: ["proprietary/product/framework/com.google.android.dialer.support.jar"],
 	product_specific: true,
 }
-
