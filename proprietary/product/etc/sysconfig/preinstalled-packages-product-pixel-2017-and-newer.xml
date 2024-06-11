@@ -179,4 +179,11 @@
         <do-not-install-in user-type="android.os.usertype.profile.CLONE" />
         <do-not-install-in user-type="android.os.usertype.profile.PRIVATE" />
     </install-in-user-type>
+
+    <!-- Well being app. Loaded from vendor/google/products/pixel_experience_2017_and_newer.mk-->
+    <install-in-user-type package="com.google.android.apps.wellbeing">
+        <install-in user-type="FULL" />
+        <install-in user-type="PROFILE" />
+        <do-not-install-in user-type="android.os.usertype.profile.PRIVATE" />
+    </install-in-user-type>
 </config>

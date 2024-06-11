@@ -23,10 +23,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/gms/proprietary/product/usr/share/ime/google/d3_lms/zh_CN_2018030706.zip:$(TARGET_COPY_OUT_PRODUCT)/usr/share/ime/google/d3_lms/zh_CN_2018030706.zip \
     vendor/google/gms/proprietary/product/usr/srec/en-US/SODA_punctuation_config.pb:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/SODA_punctuation_config.pb \
     vendor/google/gms/proprietary/product/usr/srec/en-US/SODA_punctuation_model.tflite:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/SODA_punctuation_model.tflite \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/acousticmodel/MARBLE_DICTATION_EP.endpointer_portable_lstm_mean_stddev:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/acousticmodel/MARBLE_DICTATION_EP.endpointer_portable_lstm_mean_stddev \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/acousticmodel/MARBLE_DICTATION_EP.endpointer_portable_lstm_model:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/acousticmodel/MARBLE_DICTATION_EP.endpointer_portable_lstm_model \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/acousticmodel/MARBLE_VOICE_ACTIONS_EP.endpointer_portable_lstm_mean_stddev:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/acousticmodel/MARBLE_VOICE_ACTIONS_EP.endpointer_portable_lstm_mean_stddev \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/acousticmodel/MARBLE_VOICE_ACTIONS_EP.endpointer_portable_lstm_model:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/acousticmodel/MARBLE_VOICE_ACTIONS_EP.endpointer_portable_lstm_model \
     vendor/google/gms/proprietary/product/usr/srec/en-US/config.pumpkin:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/config.pumpkin \
     vendor/google/gms/proprietary/product/usr/srec/en-US/configs/ONDEVICE_MEDIUM_CONTINUOUS.config:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/configs/ONDEVICE_MEDIUM_CONTINUOUS.config \
     vendor/google/gms/proprietary/product/usr/srec/en-US/configs/ONDEVICE_MEDIUM_SHORT.config:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/configs/ONDEVICE_MEDIUM_SHORT.config \
@@ -40,22 +36,10 @@ PRODUCT_COPY_FILES += \
     vendor/google/gms/proprietary/product/usr/srec/en-US/denorm/embedded_class_denorm.mfar:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/denorm/embedded_class_denorm.mfar \
     vendor/google/gms/proprietary/product/usr/srec/en-US/denorm/embedded_covid_19.mfar:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/denorm/embedded_covid_19.mfar \
     vendor/google/gms/proprietary/product/usr/srec/en-US/denorm/embedded_fix_ampm.mfar:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/denorm/embedded_fix_ampm.mfar \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/denorm/embedded_normalizer.mfar:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/denorm/embedded_normalizer.mfar \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/denorm/embedded_replace_annotated_punct_words_dash.mfar:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/denorm/embedded_replace_annotated_punct_words_dash.mfar \
     vendor/google/gms/proprietary/product/usr/srec/en-US/denorm/porn_normalizer_on_device.mfar:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/denorm/porn_normalizer_on_device.mfar \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/endtoendmodel/marble_rnnt_dictation_frontend_params.mean_stddev:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/endtoendmodel/marble_rnnt_dictation_frontend_params.mean_stddev \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/endtoendmodel/marble_rnnt_model-encoder.part_0.tflite:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/endtoendmodel/marble_rnnt_model-encoder.part_0.tflite \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/endtoendmodel/marble_rnnt_model-encoder.part_1.tflite:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/endtoendmodel/marble_rnnt_model-encoder.part_1.tflite \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/endtoendmodel/marble_rnnt_model-rnnt.decoder.tflite:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/endtoendmodel/marble_rnnt_model-rnnt.decoder.tflite \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/endtoendmodel/marble_rnnt_model-rnnt.joint.tflite:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/endtoendmodel/marble_rnnt_model-rnnt.joint.tflite \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/endtoendmodel/marble_rnnt_model.syms.compact:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/endtoendmodel/marble_rnnt_model.syms.compact \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/endtoendmodel/marble_rnnt_model.word_classifier:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/endtoendmodel/marble_rnnt_model.word_classifier \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/endtoendmodel/marble_rnnt_model.wpm.portable:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/endtoendmodel/marble_rnnt_model.wpm.portable \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/endtoendmodel/marble_rnnt_voice_actions_frontend_params.mean_stddev:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/endtoendmodel/marble_rnnt_voice_actions_frontend_params.mean_stddev \
     vendor/google/gms/proprietary/product/usr/srec/en-US/g2p:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/g2p \
     vendor/google/gms/proprietary/product/usr/srec/en-US/g2p.syms:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/g2p.syms \
     vendor/google/gms/proprietary/product/usr/srec/en-US/g2p_phonemes.syms:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/g2p_phonemes.syms \
-    vendor/google/gms/proprietary/product/usr/srec/en-US/hotword.data:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/hotword.data \
     vendor/google/gms/proprietary/product/usr/srec/en-US/magic_mic/MARBLE_V2_acoustic_meanstddev_vector:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/magic_mic/MARBLE_V2_acoustic_meanstddev_vector \
     vendor/google/gms/proprietary/product/usr/srec/en-US/magic_mic/MARBLE_V2_acoustic_model.int8.tflite:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/magic_mic/MARBLE_V2_acoustic_model.int8.tflite \
     vendor/google/gms/proprietary/product/usr/srec/en-US/magic_mic/MARBLE_V2_model.int8.tflite:$(TARGET_COPY_OUT_PRODUCT)/usr/srec/en-US/magic_mic/MARBLE_V2_model.int8.tflite \
