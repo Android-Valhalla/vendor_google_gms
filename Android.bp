@@ -14,9 +14,6 @@ android_app_import {
 	overrides: ["ExtShared"],
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 }
 
 android_app_import {
@@ -26,9 +23,6 @@ android_app_import {
 	overrides: ["PrintRecommendationService"],
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 }
 
 android_app_import {
@@ -38,9 +32,6 @@ android_app_import {
 	preprocessed: true,
 	presigned: true,
 	overrides: ["Tag"],
-	dex_preopt: {
-		enabled: false,
-	},
 	privileged: true,
 }
 
@@ -51,10 +42,12 @@ android_app_import {
 	overrides: ["Calendar"],
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	product_specific: true,
+        optional_uses_libs: [
+            "org.apache.http.legacy",
+            "androidx.window.extensions",
+            "androidx.window.sidecar",
+        ],
 }
 
 android_app_import {
@@ -64,10 +57,11 @@ android_app_import {
 	overrides: ["Browser", "Browser2", "Jelly"],
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	product_specific: true,
+        //Stub has no entry point for dex2oat
+        dex_preopt: {
+                enabled: false,
+        },
 }
 
 android_app_import {
@@ -77,10 +71,12 @@ android_app_import {
 	overrides: ["Contacts"],
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	product_specific: true,
+        optional_uses_libs: [
+            "org.apache.http.legacy",
+            "androidx.window.extensions",
+            "androidx.window.sidecar",
+        ],
 }
 
 android_app_import {
@@ -89,10 +85,11 @@ android_app_import {
 	apk: "proprietary/product/app/GoogleTTS/GoogleTTS.apk",
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	product_specific: true,
+        optional_uses_libs: [
+            "androidx.window.extensions",
+            "androidx.window.sidecar",
+        ],
 }
 
 android_app_import {
@@ -102,10 +99,11 @@ android_app_import {
 	overrides: ["LatinIME"],
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	product_specific: true,
+        optional_uses_libs: [
+            "androidx.window.extensions",
+            "androidx.window.sidecar",
+        ],
 }
 
 android_app_import {
@@ -114,9 +112,6 @@ android_app_import {
 	apk: "proprietary/product/app/LocationHistoryPrebuilt/LocationHistoryPrebuilt.apk",
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	product_specific: true,
 }
 
@@ -127,10 +122,11 @@ android_app_import {
 	overrides: ["Gallery2", "SnapdragonGallery"],
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	product_specific: true,
+        //HACK because of com.google.android.chromeos as optional lib
+        dex_preopt: {
+                enabled: false,
+        },
 }
 
 android_app_import {
@@ -140,10 +136,12 @@ android_app_import {
 	overrides: ["DeskClock"],
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	product_specific: true,
+        optional_uses_libs: [
+            "org.apache.http.legacy",
+            "androidx.window.extensions",
+            "androidx.window.sidecar",
+        ],
 }
 
 android_app_import {
@@ -153,10 +151,12 @@ android_app_import {
 	overrides: ["Email"],
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	product_specific: true,
+        //Disable just for space conservation so larger/longer to dexopt apps like Velvet
+        //can stay preopted
+        dex_preopt: {
+                enabled: false,
+        },
 }
 
 android_app_import {
@@ -165,10 +165,11 @@ android_app_import {
 	apk: "proprietary/product/app/TrichromeLibrary-Stub/TrichromeLibrary-Stub.apk",
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	product_specific: true,
+        //Stub has no entry point for dex2oat
+        dex_preopt: {
+                enabled: false,
+        },
 }
 
 android_app_import {
@@ -178,10 +179,11 @@ android_app_import {
 	overrides: ["webview"],
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	product_specific: true,
+        //Stub has no entry point for dex2oat
+        dex_preopt: {
+                enabled: false,
+        },
 }
 
 android_app_import {
@@ -190,11 +192,13 @@ android_app_import {
 	apk: "proprietary/product/priv-app/CarrierServices/CarrierServices.apk",
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	privileged: true,
 	product_specific: true,
+        optional_uses_libs: [
+            "org.apache.http.legacy",
+            "androidx.window.extensions",
+            "androidx.window.sidecar",
+        ],
 }
 
 android_app_import {
@@ -203,9 +207,6 @@ android_app_import {
 	apk: "proprietary/product/priv-app/ConfigUpdater/ConfigUpdater.apk",
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	privileged: true,
 	product_specific: true,
 }
@@ -217,11 +218,12 @@ android_app_import {
 	overrides: ["Dialer"],
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	privileged: true,
 	product_specific: true,
+        //HACK for com.google.android.dialer.support as a required library
+        dex_preopt: {
+                enabled: false,
+        },
 }
 
 android_app_import {
@@ -231,9 +233,6 @@ android_app_import {
 	overrides: ["OneTimeInitializer"],
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	privileged: true,
 	product_specific: true,
 }
@@ -244,11 +243,12 @@ android_app_import {
 	apk: "proprietary/product/priv-app/GoogleRestorePrebuilt/GoogleRestorePrebuilt.apk",
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	privileged: true,
 	product_specific: true,
+        optional_uses_libs: [
+            "androidx.window.extensions",
+            "androidx.window.sidecar",
+        ],
 }
 
 android_app_import {
@@ -257,11 +257,11 @@ android_app_import {
 	apk: "proprietary/product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk",
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	privileged: true,
 	product_specific: true,
+        optional_uses_libs: [
+            "org.apache.http.legacy",
+        ],
 }
 
 android_app_import {
@@ -270,11 +270,14 @@ android_app_import {
 	apk: "proprietary/product/priv-app/Phonesky/Phonesky.apk",
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	privileged: true,
 	product_specific: true,
+        optional_uses_libs: [
+            "org.apache.http.legacy",
+            "android.ext.adservices",
+            "androidx.window.extensions",
+            "androidx.window.sidecar",
+        ],
 }
 
 android_app_import {
@@ -284,11 +287,13 @@ android_app_import {
 	overrides: ["Mms", "messaging"],
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	privileged: true,
 	product_specific: true,
+        optional_uses_libs: [
+            "org.apache.http.legacy",
+            "androidx.window.extensions",
+            "androidx.window.sidecar",
+        ],
 }
 
 android_app_import {
@@ -297,11 +302,12 @@ android_app_import {
 	apk: "proprietary/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk",
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	privileged: true,
 	product_specific: true,
+        //HACK for com.google.android.wearable and others
+        dex_preopt: {
+                enabled: false,
+        },
 }
 
 android_app_import {
@@ -310,9 +316,6 @@ android_app_import {
 	apk: "proprietary/product/priv-app/PrebuiltGmsCore/m/independent/AndroidPlatformServices.apk",
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	privileged: true,
 	product_specific: true,
 }
@@ -324,11 +327,13 @@ android_app_import {
 	overrides: ["Provision"],
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	privileged: true,
 	product_specific: true,
+        optional_uses_libs: [
+            "org.apache.http.legacy",
+            "androidx.window.extensions",
+            "androidx.window.sidecar",
+        ],
 }
 
 android_app_import {
@@ -338,11 +343,14 @@ android_app_import {
 	overrides: ["QuickSearchBox"],
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	privileged: true,
 	product_specific: true,
+        optional_uses_libs: [
+            "org.apache.http.legacy",
+            "android.ext.adservices",
+            "androidx.window.extensions",
+            "androidx.window.sidecar",
+        ],
 }
 
 android_app_import {
@@ -351,11 +359,13 @@ android_app_import {
 	apk: "proprietary/product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk",
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	privileged: true,
 	product_specific: true,
+        optional_uses_libs: [
+            "org.apache.http.legacy",
+            "androidx.window.extensions",
+            "androidx.window.sidecar",
+        ],
 }
 
 android_app_import {
@@ -364,11 +374,11 @@ android_app_import {
 	apk: "proprietary/system_ext/priv-app/GoogleFeedback/GoogleFeedback.apk",
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	privileged: true,
 	system_ext_specific: true,
+        optional_uses_libs: [
+            "org.apache.http.legacy",
+        ],
 }
 
 android_app_import {
@@ -377,11 +387,13 @@ android_app_import {
 	apk: "proprietary/system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk",
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	privileged: true,
 	system_ext_specific: true,
+        optional_uses_libs: [
+            "org.apache.http.legacy",
+            "androidx.window.extensions",
+            "androidx.window.sidecar",
+        ],
 }
 
 android_app_import {
@@ -390,11 +402,13 @@ android_app_import {
 	apk: "proprietary/system_ext/priv-app/PixelSetupWizard/PixelSetupWizard.apk",
 	preprocessed: true,
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 	privileged: true,
 	system_ext_specific: true,
+        optional_uses_libs: [
+            "org.apache.http.legacy",
+            "androidx.window.extensions",
+            "androidx.window.sidecar",
+        ],
 }
 
 dex_import {
